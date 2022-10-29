@@ -1,7 +1,9 @@
 # back-end
 
+## Introduction
 In this project we intend to allow anyone to post "OFFERS" to our platform, which "WORKERS" can take on to earn a previously stated amount. All the payment is handled by a smart contract.
 
+## Core Functionality
 The entire back-end is written in solidity and has the following main functions:
 
 1. createOffer: Anyone can create an offer on our platform. This creates a struct object that includes the following variables.
@@ -21,6 +23,7 @@ At current there are four possible states of the "OFFER":
         FINISHED,
         CONFIRMED}
 
+## Future Developments
 Possible improvements:
     1. What happens if the work is not satisfactory? Can the work be disputed?
     2. What if the payment should be handled in USDC instead of ETH.
