@@ -4,7 +4,7 @@ In this project we intend to allow anyone to post "OFFERS" to our platform, whic
 
 The entire back-end is written in solidity and has the following main functions:
 
-1. createOffer: Anyone can create an offer on our platform. This creates a struct object that includes the following variables.
+1. createOffer: Anyone can create an offer on our platform. This creates a struct object that includes the following variables and initiates the payment to the escrow account.
         {uint256 offerId;
         string name;
         uint256 amount;

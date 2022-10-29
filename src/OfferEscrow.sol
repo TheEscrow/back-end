@@ -51,7 +51,7 @@ contract Escrow is ReentrancyGuard{
         totalConfirmed = 0;
     }    
 
-    // With this function anyone can create an Offer on the platform.
+    // With this function anyone can create an Offer on the platform. This also initiates the escrow payment.
     function createOffer(string calldata offerName) payable external returns (bool) {
         // Validating parameters
         require(bytes(offerName).length > 0, "The name of your offer cannot be empty");
@@ -119,6 +119,7 @@ contract Escrow is ReentrancyGuard{
         return true;
     }
 
+    // This function allows the owner to approve one of the workers that applied for their offer.
     function approveWorker(uint256 offerId, address worker) external returns (bool) {
         // Checks for essential requirement
         require(msg.sender == ownerOf[offerId], "Only owner allowed");
@@ -140,6 +141,7 @@ contract Escrow is ReentrancyGuard{
         return true;
     }
 
+    //This function allows the worker to submit their work as finished.
     function workFinished(uint256 offerId) external returns (bool) {
         // Checks for essential conditions
         require(msg.sender == offers[offerId].worker, "The offer has not been awarded to you");
@@ -159,6 +161,7 @@ contract Escrow is ReentrancyGuard{
         return true;
     }
 
+    // This function allows the owner to confirm the work of the worker and finalise payout.
     function confirmWork(uint256 offerId, bool provided) external returns (bool) {
         // Checks vital condition
         require(msg.sender == ownerOf[offerId], "Only owner allowed!");
