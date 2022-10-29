@@ -345,8 +345,8 @@
       }
     },
     "src/OfferEscrow.sol": {
-      "lastModificationDate": 1667012137777,
-      "contentHash": "f1636d1c3ed2f64fa717fd4cc937d75b",
+      "lastModificationDate": 1667051963516,
+      "contentHash": "137f38fa10dc64668168b9f2d5e3b0e3",
       "sourceName": "src/OfferEscrow.sol",
       "solcConfig": {
         "settings": {

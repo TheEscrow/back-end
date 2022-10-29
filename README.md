@@ -17,10 +17,11 @@ The entire back-end is written in solidity and has the following main functions:
 4. workFinished: Once the "WORKER" finished the "OFFER" he can set the status of the work to "FINISHED".
 5. confirmWork: The "OWNER" of the "OFFER" can confirm if the work is satisfactory or not. If it is satisfactory the "WORKER" will automatically be paid out by the smart contract.
 
-At current there are four possible states of the "OFFER":
+At current there are five possible states of the "OFFER":
         {OPEN,
         PROGRESS,
         FINISHED,
+        DISPUTED,
         CONFIRMED}
 
 ## Future Developments

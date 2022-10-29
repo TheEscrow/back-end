@@ -30,6 +30,7 @@ contract Escrow is ReentrancyGuard{
         OPEN,
         PROGRESS,
         FINISHED,
+        DISPUTED,
         CONFIRMED
     }
 
@@ -179,7 +180,16 @@ contract Escrow is ReentrancyGuard{
             offers[offerId].status = Status.CONFIRMED;
             totalConfirmed++;
         }else {
-        }return true;
+        // Marks as disputted
+        offers[offerId].status = Status.DISPUTED; 
+        }
+        emit Action (
+            offerId,
+            "DISPUTED",
+            Status.DISPUTED,
+            msg.sender
+        );
+        return true;
     }
 
     // Takes care of the payout process
