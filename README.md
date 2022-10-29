@@ -25,5 +25,6 @@ At current there are four possible states of the "OFFER":
 
 ## Future Developments
 Possible improvements:
+    
     1. What happens if the work is not satisfactory? Can the work be disputed?
     2. What if the payment should be handled in USDC instead of ETH.
