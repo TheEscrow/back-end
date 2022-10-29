@@ -1,6 +1,6 @@
 # back-end
 
-In this project we intend to allow anyone to post "OFFERS" to our platform, which "WORKERS" can take on to earn the previously stated amount.
+In this project we intend to allow anyone to post "OFFERS" to our platform, which "WORKERS" can take on to earn a previously stated amount. All the payment is handled by a smart contract.
 
 The entire back-end is written in solidity and has the following main functions:
 
