@@ -24,7 +24,7 @@ contract OfferEscrow is ReentrancyGuard {
 
     mapping(uint256 => OffersStruct) private offers; //offers map will keep track of all the offers created on this marketplace.
     mapping(address => OffersStruct[]) private offersOf; //offersOf holds the items of a specific user according to his address.
-    mapping(address => OffersStruct[]) private applicationsOf; //offersOf holds the items of a specific user according to his address.
+    mapping(address => OffersStruct[]) private applicationsOf; //applicationsOf holds the applications of a specific user according to his address.
     mapping(address => mapping(uint256 => bool)) public requested; //requested keeps track of every offer a worker has requested.
     mapping(uint256 => address) public ownerOf; //ownerOf keeps track of the owner of each offer.
     mapping(uint256 => Available) public isAvailable; //isAvailable keeps track of offers that have not been assigned to anyone.
