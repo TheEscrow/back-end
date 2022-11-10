@@ -345,8 +345,8 @@
       }
     },
     "src/OfferEscrow.sol": {
-      "lastModificationDate": 1667051963516,
-      "contentHash": "137f38fa10dc64668168b9f2d5e3b0e3",
+      "lastModificationDate": 1668094902746,
+      "contentHash": "3861553ddc7ef0965f3ce140e5b314ed",
       "sourceName": "src/OfferEscrow.sol",
       "solcConfig": {
         "settings": {
@@ -381,13 +381,13 @@
       ],
       "versionRequirement": "^0.8.17",
       "artifacts": {
-        "Escrow": {
-          "0.8.17+commit.8df45f5f.Darwin.appleclang": "OfferEscrow.sol/Escrow.json"
+        "OfferEscrow": {
+          "0.8.17+commit.8df45f5f.Darwin.appleclang": "OfferEscrow.sol/OfferEscrow.json"
         }
       }
     },
     "test/OfferEscrow.t.sol": {
-      "lastModificationDate": 1667013663811,
+      "lastModificationDate": 1668092870018,
       "contentHash": "ad89aa0f062fba3aadd3743704630a09",
       "sourceName": "test/OfferEscrow.t.sol",
       "solcConfig": {
